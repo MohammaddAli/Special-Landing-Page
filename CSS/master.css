@@ -221,6 +221,39 @@ border-color: white;
   opacity: .3;
 } */
 
+.about-us{
+  padding: 50px 0;
+/* margin: 15px 0; */
+display: flex;
+/* justify-content: space-around; */
+}
+.about-text{
+flex: 1;
+/* عشان يكون قريب من الصورة شوية */
+padding: 30px;
+}
+.about-image{
+  flex: 1;
+  text-align: center;
+}
+.about-image img{
+ /* بعمل الwidth و الheight للصورة والcontainer div هو اللي هيكبر او يصغر تلقائي */
+width: 250px;
+/* متدلهوش height هو بيتمدد مع نفسه مع ال div */
+}
+.about-text h3{
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--main-color);
+  margin: 0 0 10px
+}
+.about-text p{
+  line-height: 1.8;
+  color: #767676;
+  /* عشان اتحكم في الmargin من الheding نفسه */
+  margin: 0;
+}
+
 .gallary{
 padding: 15px 0;
 margin: 15px 0;
