@@ -185,6 +185,9 @@ imageSpans.forEach(ele => {
 
 
 
+document.querySelector(".rates .skill");
+
+
 
 
 let gallaryPhotos = document.querySelectorAll(".gallary .gallary-photos img");

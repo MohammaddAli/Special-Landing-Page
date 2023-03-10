@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -58,7 +58,7 @@ body {
   left: 0;
   top: 0;
 }
-.container{
+.container {
   width: 1170;
   padding-left: 15px;
   padding-right: 15px;
@@ -122,16 +122,16 @@ body {
   color: var(--main-color);
 }
 
-.setting-container{
+.setting-container {
   background-color: #eee;
   text-align: center;
   width: 181px;
   margin: 15px 8px 0;
   padding: 15px 0 15px;
 }
-.setting-container h4{
+.setting-container h4 {
   margin: 0;
-  color:#666
+  color: #666;
 }
 .setting-container ul {
   list-style: none;
@@ -146,11 +146,11 @@ body {
   border-radius: 50%;
   margin-right: 7px;
   cursor: pointer;
-  opacity: .3;
+  opacity: 0.3;
   border: 3px solid #eee;
 }
-.setting-container ul li:first-child{
-    background-color: var(--main-color);
+.setting-container ul li:first-child {
+  background-color: var(--main-color);
 }
 .setting-container ul li:nth-child(2) {
   background-color: #e91e63;
@@ -164,33 +164,30 @@ body {
   background-color: #03a9f4;
 }
 
-.setting-container ul li.active-color{
-opacity: 1;
-border-color: white;
+.setting-container ul li.active-color {
+  opacity: 1;
+  border-color: white;
 }
 
-
-
-
-.side-setting .image-setting-container{
+.side-setting .image-setting-container {
   background-color: #eee;
   text-align: center;
   width: 181px;
   margin: 15px 8px 0;
   padding: 15px 0 15px;
 }
-.side-setting .image-setting-container h4{
+.side-setting .image-setting-container h4 {
   margin: 0;
-  color:#666;
+  color: #666;
   font-size: 16px;
 }
-.image-setting-container span{
+.image-setting-container span {
   background: #333;
   padding: 4px 10px;
   margin: 10px 5px 0;
   color: #fff;
   cursor: pointer;
-  opacity: .5;
+  opacity: 0.5;
   display: inline-block;
   width: 50px;
   text-align: center;
@@ -199,10 +196,9 @@ border-color: white;
   border-radius: 4px;
 }
 
-.image-setting-container span.active{
+.image-setting-container span.active {
   opacity: 1;
 }
-
 
 /* .image-setting-container ul {
   list-style: none;
@@ -221,117 +217,115 @@ border-color: white;
   opacity: .3;
 } */
 
-.about-us{
+.about-us {
   padding: 50px 0;
-/* margin: 15px 0; */
-display: flex;
-/* justify-content: space-around; */
+  /* margin: 15px 0; */
+  display: flex;
+  /* justify-content: space-around; */
 }
-.about-text{
-flex: 1;
-/* عشان يكون قريب من الصورة شوية */
-padding: 30px;
+.about-text {
+  flex: 1;
+  /* عشان يكون قريب من الصورة شوية */
+  padding: 30px;
 }
-.about-image{
+.about-image {
   flex: 1;
   text-align: center;
 }
-.about-image img{
- /* بعمل الwidth و الheight للصورة والcontainer div هو اللي هيكبر او يصغر تلقائي */
-width: 250px;
-/* متدلهوش height هو بيتمدد مع نفسه مع ال div */
+.about-image img {
+  /* بعمل الwidth و الheight للصورة والcontainer div هو اللي هيكبر او يصغر تلقائي */
+  width: 250px;
+  /* متدلهوش height هو بيتمدد مع نفسه مع ال div */
 }
-.about-text h3{
+.about-text h2 {
   font-size: 30px;
   font-weight: bold;
   color: var(--main-color);
-  margin: 0 0 10px
+  margin: 0 0 10px;
 }
-.about-text p{
+.about-text p {
   line-height: 1.8;
   color: #767676;
   /* عشان اتحكم في الmargin من الheding نفسه */
   margin: 0;
 }
 
-.gallary{
-padding: 15px 0;
-margin: 15px 0;
+.gallary {
+  padding: 50px 0;
+  /* margin: 15px 0; */
 }
 
-.gallary h3{
+.gallary h2 {
+  font-size: 30px;
   font-weight: bold;
   color: var(--main-color);
+  margin: 0 0 50px;
   text-align: center;
-  font-size: 25px;
 }
 
-.gallary .gallary-photos{
-/* width: 70%; */
-text-align: center;
-/* margin: auto;
+.gallary .gallary-photos {
+  /* width: 70%; */
+  text-align: center;
+  /* margin: auto;
 padding: 10px;
 background-color: #fff;
 border: 3px solid #eee; */
-/* display: flex;
+  /* display: flex;
 flex-wrap: wtap;
 justify-content: center; */
-/* align-items: center; */
-/* width: 200px; */
+  /* align-items: center; */
+  /* width: 200px; */
 }
 
-.gallary .gallary-photos img{
- 
+.gallary .gallary-photos img {
   /* text-align: center; */
   width: 200px;
-  height: 112.5px;
   cursor: pointer;
   padding: 3px;
   background-color: #f6f6f6;
   border: 3px solid #ccc;
 }
 
-.popup{
-/* مدلهوش width و hegiht
+.popup {
+  /* مدلهوش width و hegiht
 و سابه حر يتمدد براحته حسب المحتوي اللي فيه 
 وادى للصورة max-width:100% 
 عشان متطلعش بره البوكس, يبقي اخرها 100%
 width: 600px;
 height: 400px; */
-background-color: #fff;
-position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 10001;
-padding: 15px;
-  text-align:center;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+  padding: 15px;
+  text-align: center;
   padding: 20px;
-
 }
 
-.popup-overlay{
-background-color: rgb(0 0 0 / 80%);
-position: fixed;
-top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
-z-index: 1000;
+.popup-overlay {
+  background-color: rgb(0 0 0 / 80%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
 }
 
-.popupimg{
+.popupimg {
   max-width: 100%;
   max-height: 100%;
 }
-.popup .popupTitle{
+.popup .popupTitle {
   margin-top: 0 0 20px;
   text-align: center;
   font-weight: bold;
   color: var(--main-color);
 }
 
-.exit{
+.exit {
   /* padding: 5px; */
   width: 40px;
   height: 40px;
@@ -340,9 +334,78 @@ z-index: 1000;
   color: black;
   border-radius: 50%;
   position: absolute;
-  top:-15;
-  right:-15;
+  top: -15;
+  right: -15;
   font-weight: bold;
   font-size: 20px;
   cursor: pointer;
+}
+
+.skills {
+  background-color: #eee;
+  padding-bottom: 30px;
+}
+.skills h2{
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--main-color);
+  margin: 0 0 30px;
+  padding: 30px 0  0;
+  text-align: center;
+}
+.skills .skill {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-weight: bold;
+ display: flex;
+ border-radius: 5px;
+}
+
+.skills .rates .skill .progress-bar {
+  /* width: 90%; */
+  flex: 1;
+  height: 20px;
+  background-color: #f6f6f6;
+  position: relative;
+  margin-left: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+/* .skills .skill ::after{
+
+} */
+
+.rates .skill .progress-bar span{
+  width: 0;
+  height: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+/* .rates .skill:first-child .progress-bar span{
+  width: 80%;
+  height: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.skills .rates .skill:nth-child(3) .progress-bar span{
+  width: 30%;
+  height: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left:0;
+} */
+
+
+.skills .rates .skill .name{
+  width: 100px;
+  /* زي ال progress-bar */
+ line-height: 20px;
+ text-align: center;
 }
