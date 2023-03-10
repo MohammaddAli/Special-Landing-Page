@@ -185,9 +185,6 @@ imageSpans.forEach(ele => {
 
 
 
-document.querySelector(".rates .skill");
-
-
 
 
 let gallaryPhotos = document.querySelectorAll(".gallary .gallary-photos img");
@@ -238,3 +235,20 @@ document.body.addEventListener("click",(e)=>{
   // وممكن انك تعملdocument.querySelector
   // وتختار العنصر اللي عايز تمسحه وتعمل عليه remove
 });
+
+
+let ratesDiv = document.querySelector(".rates");
+let rates = document.querySelectorAll(".rates .skill span");
+console.log(window.scrollY);
+console.log(ratesDiv.offsetTop - 100);
+
+window.onscroll = function(){
+  rates.forEach((ele)=>{
+    ele.style.setProperty("transition", ".7s");
+    if(window.scrollY >= ratesDiv.offsetTop - 300 ||window.scrollY <= ratesDiv.offsetBottom){
+      ele.style.width = ele.dataset.rate;
+    }else{
+      ele.style.width = 0;
+    }
+  })
+}
