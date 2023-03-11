@@ -245,7 +245,7 @@ console.log(ratesDiv.offsetTop - 100);
 window.onscroll = function(){
   rates.forEach((ele)=>{
     ele.style.setProperty("transition", ".7s");
-    if(window.scrollY >= ratesDiv.offsetTop - 300 ||window.scrollY <= ratesDiv.offsetBottom){
+    if(window.scrollY >= ratesDiv.offsetTop - 300 && window.scrollY <= (ratesDiv.offsetTop + ratesDiv.offsetHeight) -100){
       ele.style.width = ele.dataset.rate;
     }else{
       ele.style.width = 0;
